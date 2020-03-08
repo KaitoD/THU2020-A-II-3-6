@@ -38,3 +38,34 @@ $ 微分映射dF(X_0)=JF(X_0)dX$
 ### 复合映射微分
 $ f:R^n \to R^m g:R^m \to R^k 均可微$
 $ 则g\circ f可微，J(g\circ f)(X_0)=Jg(U_0)\times Jf(X_0)$
+## 隐函数微分
+### 方程确定隐函数
+#### 二元方程——一元函数
+$ 开集D \subset R^2, F: D\to R,有：$
+- $ F(x,y)\in C^1(D)$
+- $ P(x_0,y_0)\in D, s.t.\ F(x_0,y_0)=0$
+- $ F'_y(P_0)\neq 0$
+$ 则\exist 开区域 I\times J\subset D,s.t.(x_0,y_0)\in I\times J:$
+- $ \forall x \in I,F(x,y)=0在J中有唯一解y=f(x)$
+- $ y_0=f(x_0)$
+- $ f(x)\in C^1(I)$
+- $ \forall x \in I, f'(x)=-\frac{F'_x}{F'_y}$
+#### n+1元函数——n元函数
+$ n+1元函数F(x_1,x_2,...,x_n,y)在P_0(x^0_1,...,x^0_n,y_0)\in R^{n+1}邻域W中有定义，且：$
+- $ F(P_0)=0$
+- $ F\in C^q(W)$
+- $ F'_y(P_0)\neq 0$
+$ 则\exist Q_0(x^0_1,...,x^0_n)\in R^n的邻域U \subset R^n,及定义在U上的n元函数y=f(x_1,...,x_n),有：$
+- $ y_0=f(x^0_1,...,x^0_n)$
+- $ f(X_0,y_0)=0$
+- $ y=f(X)\in C^q(U)$
+- $ \forall X\in U,\frac{\partial y}{\partial x_i}=-\frac{F'_{x_i}}{F'_y}$
+### 方程组确定隐函数组
+$ m个n+m元F_i(x_1,...,x_n,y_1,...,y_m)在P_0(X_0,Y_0)邻域W内有定义，且：$
+- $ F_i(X_0,Y_0)=0$
+- $ F_i \in C^q(W)$
+- $ \frac{\partial (F_1,...,F_m)}{\partial (y_1,...,y_m)}(P_0)\ invertible$
+$ 则\exist Q_0(X_0)的邻域U\subset R^n,及U上m个n元函数y_i=y_i(X)满足$
+- $ 同上$
+- $ 同上$
+- $ \forall (x_1,...,x_n)\in U, \frac{\partial(y_1,...,y_m)}{\partial (x_1,...,x_n)}=-(\frac{\partial(F_1,...,F_m)}{\partial(y_1,...,y_m)})^{-1}\frac{\partial(F_1,...,F_n)}{\partial(x_1,...,x_n)}$
